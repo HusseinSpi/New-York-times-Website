@@ -77,28 +77,21 @@ main nav ul li strong {
 
 .articles {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "articles image image"
+    "last-articles last-articles last-articles";
 }
 
 article .articles {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: articles;
 }
 
 .articles .image {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: image;
 }
 
 .articles .last-article {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-area: last-articles;
 }
 
 .plus {
@@ -131,40 +124,35 @@ article .articles {
 
 .articles-with-menu {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "menu-article menu-article menu-article"
+    "articles image image"
+    "last-articles last-articles last-articles";
   margin-bottom: 15px;
 }
 
 .menu-article {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: menu-article;
 }
 
 .articles-with-menu .articles {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-area: articles;
 }
 
 .articles-with-menu .image {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-area: image;
 }
 
 .articles-with-menu .last-article {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-area: last-articles;
 }
 
 .image-flex {
   width: 320px;
+}
+
+.image-flex img {
+  width: 110%;
 }
 
 .image {
@@ -224,4 +212,133 @@ article .articles {
 
 .dark-more {
   color: rgba(0, 0, 0, 0.2);
+}
+
+.photo {
+  width: 45px;
+  height: 45px;
+}
+
+.articles-row img {
+  width: 255px;
+  height: 170px;
+}
+
+.tow-border {
+  position: relative;
+  padding: 0 35px;
+}
+
+.tow-border::after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100%;
+  top: 0;
+  right: 18px;
+}
+
+.tow-border::before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100%;
+  top: 0;
+  left: 18px;
+}
+
+.articles-row {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.more-right {
+  position: absolute;
+  top: 38%;
+  right: 8px;
+  background-color: white;
+  padding: 3px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.articles-grid- {
+  display: grid;
+  grid-template-areas:
+    "one four four five"
+    "one four four six"
+    "tow four four seven"
+    "tow four four eight"
+    "three four four nine"
+    "three four four ten";
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px black solid;
+}
+
+.articles-grid- .one {
+  grid-area: one;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 150px;
+}
+
+.articles-grid- .tow {
+  grid-area: tow;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 150px;
+}
+
+.articles-grid- .three {
+  grid-area: three;
+}
+
+.articles-grid- .four {
+  grid-area: four;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.articles-grid- .five {
+  grid-area: five;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.articles-grid- .six {
+  grid-area: six;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.articles-grid- .seven {
+  grid-area: seven;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.articles-grid- .eight {
+  grid-area: eight;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.articles-grid- .nine {
+  grid-area: nine;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.articles-grid- .ten {
+  grid-area: ten;
+  padding: 10px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.hover:hover {
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }

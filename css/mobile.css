@@ -1,0 +1,52 @@
+@media (max-width: 1250px) {
+  header {
+    display: none;
+  }
+
+  body {
+    max-width: 1200;
+  }
+
+  nav.box {
+    display: none;
+  }
+  .articles {
+    display: grid;
+    grid-template-areas:
+      "articles"
+      "image"
+      "last-articles";
+  }
+
+  .one {
+    flex-direction: column;
+  }
+
+  .articles-with-menu {
+    display: grid;
+    grid-template-areas:
+      "menu-article"
+      "articles"
+      "image"
+      "last-articles";
+    margin-bottom: 15px;
+  }
+
+  .articles-grid- {
+    display: grid;
+    grid-template-areas:
+      "four"
+      "one"
+      "tow"
+      "three"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine"
+      "ten";
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px black solid;
+  }
+}
