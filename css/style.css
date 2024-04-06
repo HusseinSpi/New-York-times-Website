@@ -1,0 +1,227 @@
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-row- {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.regions {
+  font-size: 10px;
+  margin-left: 300px;
+}
+
+.regions a {
+  padding: 7px 8px 6px;
+}
+
+.regions a:hover {
+  background-color: rgba(175, 175, 175, 0.1);
+  padding: 7px 8px 6px;
+  border-radius: 3px;
+}
+
+.btn {
+  background-color: rgb(86, 123, 149);
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+  font-size: 11px;
+  margin: 0 5px;
+}
+
+.btn:hover {
+  background-color: rgb(71, 129, 170);
+}
+
+.title {
+  font-size: 12px;
+}
+
+.menu li {
+  font-size: 10px;
+  padding: 20px 12px;
+}
+
+ul.menu {
+  padding: 0 150px;
+}
+
+.double-line {
+  height: px;
+}
+
+main nav ul li {
+  font-size: 11px;
+}
+
+main nav ul li strong {
+  font-size: 13px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+article .articles {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.articles .image {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.articles .last-article {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.plus {
+  font-size: 10px;
+  line-height: 10px;
+  color: white;
+  background-color: #363636;
+  padding: 2px;
+  border-radius: 7px;
+}
+
+.last-article {
+  padding: 20px 0;
+  position: relative;
+}
+
+.last-article article {
+  width: 340px;
+}
+
+.menu-article {
+  font-size: 11px;
+  line-height: 16px;
+  margin-bottom: 15px;
+}
+
+.menu-article a {
+  margin: 0 5px;
+}
+
+.articles-with-menu {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 15px;
+}
+
+.menu-article {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.articles-with-menu .articles {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.articles-with-menu .image {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.articles-with-menu .last-article {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.image-flex {
+  width: 320px;
+}
+
+.image {
+  position: relative;
+  padding: 10px 0;
+}
+
+.image::after {
+  content: "";
+}
+
+.img-1::after {
+  content: "Ismael Abu Dayyah/Associated Press";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.img-2 {
+  margin-bottom: 30px;
+}
+
+.img-3::after {
+  content: "Kenny Holston/The New York Times";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.img-4::after {
+  content: "Robert Neubecker";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.img-5::after {
+  content: "Ella Koeze";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.more- {
+  padding: 3px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.dark-more {
+  color: rgba(0, 0, 0, 0.2);
+}
