@@ -274,18 +274,36 @@ article .articles {
   margin-top: 25px;
   padding-top: 25px;
   border-top: 1px black solid;
+  position: relative;
+  height: 560px;
 }
 
 .articles-grid- .one {
   grid-area: one;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 150px;
+  position: relative;
+}
+
+.articles-grid- .one::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 0;
 }
 
 .articles-grid- .tow {
   grid-area: tow;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 150px;
+  position: relative;
+}
+
+.articles-grid- .tow::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 0;
 }
 
 .articles-grid- .three {
@@ -301,32 +319,82 @@ article .articles {
 
 .articles-grid- .five {
   grid-area: five;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
   padding: 10px;
+  margin-bottom: 5px;
+}
+
+.articles-grid- .five::before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  right: 0;
 }
 
 .articles-grid- .six {
   grid-area: six;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
   padding: 10px;
+  margin-bottom: 5px;
+}
+
+.articles-grid- .six::before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  right: 0;
 }
 
 .articles-grid- .seven {
   grid-area: seven;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
   padding: 10px;
+  margin-bottom: 5px;
+}
+
+.articles-grid- .seven::before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  right: 0;
 }
 
 .articles-grid- .eight {
   grid-area: eight;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
   padding: 10px;
+  margin-bottom: 5px;
+}
+
+.articles-grid- .eight::before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  right: 0;
 }
 
 .articles-grid- .nine {
   grid-area: nine;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
   padding: 10px;
+  margin-bottom: 5px;
+}
+
+.articles-grid- .nine::before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  right: 0;
 }
 
 .articles-grid- .ten {
@@ -341,4 +409,34 @@ article .articles {
 .hover:hover {
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
+}
+
+.ads {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+}
+
+.ads img {
+  height: 250px;
+  width: 970px;
+  margin-top: 10px;
+}
+
+.non-b::before {
+  border: none;
+}
+
+.articles-grid-::after {
+  content: "More News";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: bold;
 }
